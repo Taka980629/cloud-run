@@ -8,7 +8,7 @@ app.use(express.json());
 const port = process.env.PORT || 8080;
 const server = app.listen(port, () =>
   console.log(`
-🚀 Server ready at: http://localhost:3000
+🚀 Server ready at: http://localhost:3001
 ⭐️ See sample requests: http://pris.ly/e/ts/rest-express#3-using-the-rest-api`)
 );
 // app.post(`/signup`, async (req, res) => {
@@ -149,4 +149,3 @@ const server = app.listen(port, () =>
 
 //   res.json(posts);
 // });
-

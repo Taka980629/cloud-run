@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 const port = process.env.PORT || 3000;
-const server = app.listen(port, () =>
+app.listen(port, () =>
   console.log(`
 🚀 Server ready at: http://localhost:3001
 ⭐️ See sample requests: http://pris.ly/e/ts/rest-express#3-using-the-rest-api`)

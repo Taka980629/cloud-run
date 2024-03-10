@@ -2,6 +2,11 @@ FROM node:20
 
 WORKDIR /app
 
+
+ARG ENV
+
+ENV ENV ${ENV}
+
 COPY . .
 RUN npm install
 

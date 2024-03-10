@@ -4,7 +4,6 @@ WORKDIR /app
 
 
 ARG ENV
-
 ENV ENV ${ENV}
 
 COPY . .

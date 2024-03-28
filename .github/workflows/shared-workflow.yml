@@ -1,0 +1,16 @@
+#呼び出し先
+name: Repository dispatch receive
+
+on:
+  repository_dispatch:
+    types: [on-demand-test]
+
+jobs:
+  receive-repository-dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Receive
+        run: |
+          env=${{ github.event.client_payload.env }}
+
+          echo "ENV = $env"

@@ -3,10 +3,8 @@ FROM node:20
 WORKDIR /app
 
 
-# ARG ENV
-# ENV ENV ${ENV}
-
-ENV HOSTNAME "0.0.0.0"
+ARG ENV
+ENV ENV ${ENV}
 
 COPY . .
 RUN npm install
